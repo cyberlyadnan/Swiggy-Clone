@@ -27478,7 +27478,7 @@ const Heading = ()=>{
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                 className: "self-center text-xl font-semibold whitespace-nowrap dark:text-white",
-                                children: "MCommerce"
+                                children: "Foodie Express"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
                                 lineNumber: 32,

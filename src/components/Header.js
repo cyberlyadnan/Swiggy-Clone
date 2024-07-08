@@ -30,7 +30,7 @@ const Heading = () => {
           <Link to="/" className="flex items-center">
             <img src={logo} className="mr-3 h-6 sm:h-9" alt="Logo" />
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-              MCommerce
+              Foodie Express
             </span>
           </Link>
           <div className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1 text-center">
