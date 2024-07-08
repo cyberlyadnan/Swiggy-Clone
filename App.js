@@ -4,15 +4,14 @@ import Header from "./src/components/Header";
 import Body from "./src/components/Body";
 import Footer from "./src/components/Footer";
 import Error from "./src/components/Error";
-import { createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Shimmer, { ShimmerCard } from "./src/components/ShimmerCard";
 // import SnacksPage from "./src/components/SnacksPage";
-import { SearchProvider } from "./Utils/constants";
 import { Provider } from "react-redux";
 import appStore from "./Utils/appStore";
-import {SearchProvider}  from "./Utils/SearchContext";
+import { SearchProvider } from "./Utils/SearchContext";
 
-// const Body = lazy(()=>import("./src/components/Body"))
+// const Body = lazy(() => import("./src/components/Body"))
 const About = lazy(() => import("./src/components/About"));
 const Contact = lazy(() => import("./src/components/Contact"));
 const RestaurantPage = lazy(() => import("./src/components/RestaurantPage"));
@@ -21,17 +20,14 @@ const CartPage = lazy(() => import("./src/components/CartPage"));
 const SearchPage = lazy(() => import("./src/components/SearchPage"));
 
 const Main = () => {
-  // useScrollRestoration()
-
-
   return (
     <>
       <Provider store={appStore}>
-          <SearchProvider>
-            <Header />
-            <Outlet />
-            <Footer />
-          </SearchProvider>
+        <SearchProvider>
+          <Header />
+          <Outlet />
+          <Footer />
+        </SearchProvider>
       </Provider>
     </>
   );
@@ -88,7 +84,7 @@ const RouterList = createBrowserRouter([
         ),
       },
       {
-        path: "Search/:query",
+        path: "search/:query",
         element: (
           <Suspense fallback={<ShimmerCard />}>
             <SearchPage />

@@ -9,20 +9,25 @@ const SnacksPage = () => {
   const [snaksData, setsnaksData] = useState(null);
   const [allRestaurants, setallRestaurants] = useState([]);
   const { resid } = useParams();
+  console.log("Restaurant Id"+resid)
 
   const GetData = async () => {
     try {
       const data = await fetch(
         `${SnackAPI}${resid}&tags=layout_CCS_Pizza&sortBy=&filters=&type=rcv2&offset=0&page_type=null`
       );
+      // console.log(`${SnackAPI}${resid}&tags=layout_CCS_Pizza&sortBy=&filters=&type=rcv2&offset=0&page_type=null`)
+      // "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.65420&lng=77.23730&collection=83631&tags=layout_CCS_Pizza&sortBy=&filters=&type=rcv2&offset"
       const jsonData = await data.json();
       setsnaksData(jsonData);
+      console.log(jsonData)
 
       const restaurants = jsonData.data.cards.filter(
         (restro) =>
           restro.card.card["@type"] ===
           "type.googleapis.com/swiggy.presentation.food.v2.Restaurant"
       );
+      console.log(restaurants)
       setallRestaurants(restaurants);
     } catch (error) {
       console.error("Error fetching data:", error);
