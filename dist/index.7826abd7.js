@@ -40743,13 +40743,11 @@ const ShimmerCard = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "card-media",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactShimmer.Shimmer), {
-                    width: "100%",
-                    height: "176px",
-                    className: "rounded-lg"
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: " loader bg-gray-300"
                 }, void 0, false, {
                     fileName: "src/components/ShimmerCard.js",
-                    lineNumber: 8,
+                    lineNumber: 9,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
@@ -40766,7 +40764,7 @@ const ShimmerCard = ()=>{
                         className: "mb-2"
                     }, void 0, false, {
                         fileName: "src/components/ShimmerCard.js",
-                        lineNumber: 11,
+                        lineNumber: 12,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactShimmer.Shimmer), {
@@ -40775,7 +40773,7 @@ const ShimmerCard = ()=>{
                         className: "mb-1"
                     }, void 0, false, {
                         fileName: "src/components/ShimmerCard.js",
-                        lineNumber: 12,
+                        lineNumber: 13,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactShimmer.Shimmer), {
@@ -40784,7 +40782,7 @@ const ShimmerCard = ()=>{
                         className: "mb-2"
                     }, void 0, false, {
                         fileName: "src/components/ShimmerCard.js",
-                        lineNumber: 13,
+                        lineNumber: 14,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40799,7 +40797,7 @@ const ShimmerCard = ()=>{
                                         className: "mr-1"
                                     }, void 0, false, {
                                         fileName: "src/components/ShimmerCard.js",
-                                        lineNumber: 16,
+                                        lineNumber: 17,
                                         columnNumber: 25
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactShimmer.Shimmer), {
@@ -40807,13 +40805,13 @@ const ShimmerCard = ()=>{
                                         height: "16px"
                                     }, void 0, false, {
                                         fileName: "src/components/ShimmerCard.js",
-                                        lineNumber: 17,
+                                        lineNumber: 18,
                                         columnNumber: 25
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/ShimmerCard.js",
-                                lineNumber: 15,
+                                lineNumber: 16,
                                 columnNumber: 21
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactShimmer.Shimmer), {
@@ -40821,19 +40819,19 @@ const ShimmerCard = ()=>{
                                 height: "16px"
                             }, void 0, false, {
                                 fileName: "src/components/ShimmerCard.js",
-                                lineNumber: 19,
+                                lineNumber: 20,
                                 columnNumber: 21
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/ShimmerCard.js",
-                        lineNumber: 14,
+                        lineNumber: 15,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/ShimmerCard.js",
-                lineNumber: 10,
+                lineNumber: 11,
                 columnNumber: 13
             }, undefined)
         ]

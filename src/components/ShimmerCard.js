@@ -5,7 +5,8 @@ export const ShimmerCard = () => {
     return (
         <div className="m-2 p-2 w-72 bg-slate-50 shadow-md rounded-lg hover:bg-slate-200 border-1">
             <div className="card-media">
-                <Shimmer width="100%" height="176px" className="rounded-lg" />
+                {/* <Shimmer width="100%" height="176px" className="rounded-lg" /> */}
+                <div className=" loader bg-gray-300"></div>
             </div>
             <div className="p-2">
                 <Shimmer width="60%" height="20px" className="mb-2" />

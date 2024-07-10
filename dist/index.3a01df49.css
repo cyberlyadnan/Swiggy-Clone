@@ -887,6 +887,11 @@ img, video {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
 .bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
@@ -1360,6 +1365,70 @@ img, video {
 
 .duration-300 {
   transition-duration: .3s;
+}
+
+.loader {
+  background: #e2e2e2;
+  border-radius: 4px;
+  width: 100%;
+  height: 160px;
+  position: relative;
+  overflow: hidden;
+}
+
+.loader:before {
+  content: "";
+  background: #ff9371;
+  width: 80px;
+  height: 40px;
+  animation: 2s ease-in-out infinite alternate slide;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: rotate(45deg)translate(30%, 40%);
+  box-shadow: 32px -34px 0 5px #ff3d00;
+}
+
+.loader:after {
+  content: "";
+  transform-origin: 35px 145px;
+  background: #ff3d00;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: 2s ease-in-out infinite rotate;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform: rotate(0);
+}
+
+@keyframes slide {
+  0%, 100% {
+    bottom: -35px;
+  }
+
+  25%, 75% {
+    bottom: -2px;
+  }
+
+  20%, 80% {
+    bottom: 2px;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-15deg);
+  }
+
+  25%, 75% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(25deg);
+  }
 }
 
 .hover\:bg-\[\#29a349\]:hover {
