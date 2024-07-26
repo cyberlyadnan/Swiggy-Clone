@@ -1,9 +1,8 @@
-<<<<<<< HEAD
-=======
 <h1>Swiggy Clone Project</h1>
 
   <p>This project is a clone of Swiggy, built using React and several complementary libraries and tools to replicate its functionality and user experience.</p>
-
+  <p>Live Demo
+  Check out the live version of Foodie Express at </p>https://foodieexpress-abfbe.web.app/.
   <h2>Technologies Used</h2>
   <ul>
     <li><strong>React</strong>: A JavaScript library for building user interfaces.</li>
